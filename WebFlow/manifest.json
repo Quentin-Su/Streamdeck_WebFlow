@@ -1,0 +1,36 @@
+{
+  "SDKVersion": 2,
+  "Author": "Quentin-Su",
+  "Name": "WebFlow",
+  "Description": "Allows users to open websites either in a standard browser or in a private browsing window with a single click.",
+  "Icon": "Images/CategoryIcon",
+  "URL": "https://github.com/Quentin-Su/Streamdeck_Web_Browser",
+  "CodePath": "WebFlow",
+  "Version": "1.0.0",
+  "Software": {
+    "MinimumVersion": "5.0"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Category": "WebFlow",
+  "CategoryIcon": "Images/CategoryIcon",
+  "Actions": [
+    {
+      "Icon": "Images/ActionImage",
+      "Name": "Website",
+      "States": [
+        {
+          "Image": "Images/PluginImage"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Open a URL or a web browser",
+      "UUID": "com.quentin-su.webflow.browser",
+      "PropertyInspectorPath": "PropertyInspector/WebFlow/WebBrowser.html"
+    }
+  ]
+}

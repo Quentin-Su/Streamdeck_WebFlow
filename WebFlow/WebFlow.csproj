@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\Debug\com.quentin-su.webflow.sdPlugin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -60,12 +60,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\WebBrowser.cs" />
+    <Compile Include="Helpers\Win_WebBrowser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="manifest.json" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build\DistributionTool.exe" />
+    <Content Include="Images\ActionImage%402x.png" />
+    <Content Include="Images\ActionImage.png" />
+    <Content Include="Images\CategoryIcon%402x.png" />
+    <Content Include="Images\CategoryIcon.png" />
+    <Content Include="Images\PluginImage%402x.png" />
+    <Content Include="Images\PluginImage.png" />
+    <Content Include="libs\assets\caret.svg" />
+    <Content Include="libs\assets\check.png" />
+    <Content Include="libs\assets\check.svg" />
+    <Content Include="libs\assets\elg_calendar.svg" />
+    <Content Include="libs\assets\elg_calendar_inv.svg" />
+    <Content Include="libs\assets\rcheck.svg" />
+    <Content Include="libs\src\pickers.js" />
+    <Content Include="libs\src\rangeTooltip.css" />
+    <Content Include="libs\src\rangeTooltip.js" />
+    <Content Include="libs\src\sdpi.css" />
+    <Content Include="libs\src\sdtools.common.js" />
+    <Content Include="PropertyInspector\WebFlow\WebBrowser.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
