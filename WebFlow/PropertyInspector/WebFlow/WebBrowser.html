@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>com.quentin-su.web Property Inspector</title>
+    <link rel="stylesheet" href="../../libs/src/sdpi.css">
+    <script src="../../libs/src/sdtools.common.js"></script>
+    <script src="../../libs/src/pickers.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Url</div>
+            <input class="sdpi-item-value sdProperty" placeholder="" value="" id="url" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Browser</div>
+            <select class="sdpi-item-value select sdProperty sdList" id="browsers" oninput="setSettings()" sdListTextProperty="browserName" sdListValueProperty="browserPath" sdValueField="browserPath"></select>
+        </div>
+
+        <div type="checkbox" class="sdpi-item">
+            <div class="sdpi-item-label">InPrivate</div>
+            <div class="sdpi-item-value">
+                <input id="inPrivate" name="inPrivate" type="checkbox" value="" class="sdProperty sdCheckbox" oninput="setSettings()">
+                <label for="inPrivate" class="sdpi-item-label"><span></span>&nbsp;</label>
+            </div>
+        </div>
+
+        <div type="checkbox" class="sdpi-item">
+            <div class="sdpi-item-label">En Arrière Plan</div>
+            <div class="sdpi-item-value">
+                <input id="inBackground" name="inBackground" type="checkbox" value="" class="sdProperty sdCheckbox" oninput="setSettings()">
+                <label for="inBackground" class="sdpi-item-label"><span></span>&nbsp;</label>
+            </div>
+        </div>
+
+        <details class="message info">
+            <summary>For feedback/suggestions contact me at <span class="linkspan" onclick="openWebsite()">https://github.com/Quentin-Su/</span></summary>
+        </details>
+    </div>
+</body>
+</html>
