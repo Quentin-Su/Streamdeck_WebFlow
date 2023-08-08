@@ -52,6 +52,7 @@
       <HintPath>..\packages\System.Drawing.Common.7.0.0\lib\net462\System.Drawing.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\OpenWebFromClipboard.cs" />
     <Compile Include="Actions\WebBrowser.cs" />
     <Compile Include="Helpers\Win_WebBrowser.cs" />
     <Compile Include="Models\Browser.cs" />
@@ -90,6 +92,7 @@
     <Content Include="libs\src\rangeTooltip.js" />
     <Content Include="libs\src\sdpi.css" />
     <Content Include="libs\src\sdtools.common.js" />
+    <Content Include="PropertyInspector\WebFlow\OpenWebFromClipboard.html" />
     <Content Include="PropertyInspector\WebFlow\WebBrowser.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

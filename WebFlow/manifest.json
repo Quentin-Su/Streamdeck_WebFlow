@@ -31,6 +31,19 @@
       "Tooltip": "Open a URL or a web browser",
       "UUID": "com.quentin-su.webflow.browser",
       "PropertyInspectorPath": "PropertyInspector/WebFlow/WebBrowser.html"
+    },
+    {
+      "Icon": "Images/ActionImage",
+      "Name": "Website - Clipboard",
+      "States": [
+        {
+          "Image": "Images/PluginImage"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Open a URL or a web browser based on the selected text or the last copied item",
+      "UUID": "com.quentin-su.webflow.openwebfromclipboard",
+      "PropertyInspectorPath": "PropertyInspector/WebFlow/OpenWebFromClipboard.html"
     }
   ]
 }
