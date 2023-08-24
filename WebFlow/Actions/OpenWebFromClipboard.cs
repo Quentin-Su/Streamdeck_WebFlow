@@ -117,11 +117,11 @@ namespace WebFlow.Actions
                         FileName = settings.BrowserPath,
                         UseShellExecute = true,
                         WindowStyle = settings.InBackground ? ProcessWindowStyle.Hidden : ProcessWindowStyle.Maximized,
-                        Arguments = $"{settings.Url} {(settings.InPrivate ? settings.Browsers.FirstOrDefault(x => x.BrowserPath == settings.BrowserPath).Argument : string.Empty)}"
+                        Arguments = $"{(string.IsNullOrEmpty(settings.Url) ? string.Empty : settings.Url)} {(settings.InPrivate ? settings.Browsers.FirstOrDefault(x => x.BrowserPath == settings.BrowserPath).Argument : string.Empty)}"
                     });
                 });
 
-                thread.SetApartmentState(System.Threading.ApartmentState.STA); // Set the thread apartment state to STA (Single Threaded Apartment) for clipboard access
+                thread.SetApartmentState(System.Threading.ApartmentState.STA);
                 thread.Start();
             }
             catch (Exception ex)
